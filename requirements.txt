@@ -1,5 +1,5 @@
 Flask==3.0.3
 Flask-Cors==4.0.1
-pandas==2.2.2
+pandas==2.1.1
 xlsxwriter==3.2.0
 gunicorn==23.0.0
