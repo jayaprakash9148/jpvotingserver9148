@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voting Dashboard</title>
+    <style>
+        body { font-family: Arial; background: #f5f5f5; text-align: center; }
+        .card { display: inline-block; background: white; padding: 20px; margin: 15px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); width: 200px; }
+        h2 { color: #2c3e50; }
+    </style>
+</head>
+<body>
+    <h1>Voting Statistics Dashboard</h1>
+    <a href="{{ url_for('admin') }}">🗳 Manage Voters</a>
+    <div class="card"><h2>Total Voters</h2><p>{{ total }}</p></div>
+    <div class="card"><h2>Male</h2><p>{{ male }}</p></div>
+    <div class="card"><h2>Female</h2><p>{{ female }}</p></div>
+    <div class="card"><h2>Voted</h2><p>{{ voted }}</p></div>
+    <div class="card"><h2>Voting %</h2><p>{{ percent }}%</p></div>
+</body>
+</html>
